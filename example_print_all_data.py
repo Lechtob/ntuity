@@ -1,16 +1,3 @@
-[![GitHub Release][releases-shield]][releases]
-
-
-# Ntuity API
-
-Python wrapper for getting energy data from Ntuity API.
-
-## API Token
-
-To generate a API token go to https://neoom.ntuity.io/ and log into your account. After logging in open a site and generate a API token under API key.
-
-## How to use the package
-```python
 """Example of usage of the ntuity API."""
 import asyncio
 import logging
@@ -23,7 +10,7 @@ from ntuity import (
     InvalidApiTokenError,
 )
 
-API_TOKEN = "YOUR_API_TOKEN_HERE"
+API_TOKEN = "xamSFi6MBYjP7VRUSYdiKbydazeyWndR"
 
 logging.basicConfig(level=logging.DEBUG)
 
@@ -53,7 +40,3 @@ async def main():
 loop = asyncio.new_event_loop()
 loop.run_until_complete(main())
 loop.close()
-```
-
-[releases]: https://github.com/Lechtob/ntuity/releases
-[releases-shield]: https://img.shields.io/github/v/release/Lechtob/ntuity
